@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+   <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+<body>
+
+    <div id="sideNav" class="side-nav d-flex">
+        <div class="nav-links d-flex flex-column justify-content-between p-4 bg-dark">
+            <ul class="list-unstyled">
+                <li class="py-2"><a href="#" class="nav-link text-white" data-section="search">Search</a></li>
+                <li class="py-2"><a href="#" class="nav-link text-white" data-section="categories">Categories</a></li>
+                <li class="py-2"><a href="#" class="nav-link text-white" data-section="area">Area</a></li>
+                <li class="py-2"><a href="#" class="nav-link text-white" data-section="ingredients">Ingredients</a></li>
+                <li class="py-2"><a href="#" class="nav-link text-white" data-section="contact">Contact Us</a></li>
+            </ul>
+            <div class="nav-footer text-white-50">
+                <div class="social-icons mb-2">
+                    <i class="fab fa-facebook-f me-2"></i>
+                    <i class="fab fa-twitter me-2"></i>
+                    <i class="fas fa-globe"></i>
+                </div>
+                <p>Copyright © 2024 All Rights Reserved.</p>
+            </div>
+        </div>
+        
+        <div class="nav-toggle bg-white d-flex flex-column justify-content-center align-items-center">
+            <img src="./images/logo.png" alt="Logo" width="40" class="mb-4">
+            <i id="openCloseIcon" class="fas fa-bars fa-2x cursor-pointer"></i>
+        </div>
+    </div>
+    
+    <div id="mainContent" class="container-fluid p-4">
+
+        <section id="mealsSection" class="row gy-4 pb-5 d-flex">
+            </section>
+
+        <section id="searchSection" class="row pb-5 d-none">
+            <div class="col-md-6 mb-3">
+                <input type="text" id="searchInputName" class="form-control bg-transparent text-white" placeholder="Search by Meal Name">
+            </div>
+            <div class="col-md-6 mb-3">
+                <input type="text" id="searchInputLetter" class="form-control bg-transparent text-white" placeholder="Search by First Letter" maxlength="1">
+            </div>
+        </section>
+        
+        <section id="contentGrid" class="row gy-4 pb-5 d-none">
+            </section>
+        
+        <section id="detailsSection" class="row pb-5 d-none">
+            </section>
+
+        <section id="contactSection" class="row justify-content-center pb-5 d-none">
+            <div class="col-lg-8">
+                <div class="row gy-4">
+                    <div class="col-md-6"><input type="text" id="nameInput" class="form-control" placeholder="Enter Your Name"></div>
+                    <div class="col-md-6"><input type="email" id="emailInput" class="form-control" placeholder="Enter Your Email"></div>
+                    <div class="col-md-6"><input type="text" id="phoneInput" class="form-control" placeholder="Enter Your Phone"></div>
+                    <div class="col-md-6"><input type="number" id="ageInput" class="form-control" placeholder="Enter Your Age"></div>
+                    <div class="col-md-6"><input type="password" id="passwordInput" class="form-control" placeholder="Enter Password"></div>
+                    <div class="col-md-6"><input type="password" id="repasswordInput" class="form-control" placeholder="Re-enter Password"></div>
+                    <div class="col-12 text-center">
+                        <button id="submitBtn" class="btn btn-danger mt-3" disabled>Submit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    
+   <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+</html>
